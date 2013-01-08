@@ -20,8 +20,16 @@ But here is an example anyway :
         [[MEAPI sharedInstance] getSessionTokenWithCompletionBlock:^(NSString *sessionToken) {
             NSLog(@"Got session token, this will be stored for this usage session, no need for calling it again and again for every API call.");
             
-            [[MEAPI sharedInstance] getCurrentCardWithType:MEAPICardTypeUpToDate completionBlock:^(MECard *card, NSError *error) {
-                NSLog(@"We got the card! %@", card.image);
+            NSString *schoolNumber = @"";
+            NSString *password = @"";
+            NSString *schoolCode = @"";
+            
+            [[MEAPI sharedInstance] loginWithSchoolNumber:schoolNumber password:password schoolCode:schoolCode withCompletionBlock:^(MEStudent *student, NSError *error) {
+                NSLog(@"Logged in student %@", student);
+                
+                [[MEAPI sharedInstance] getCurrentCardWithType:MEAPICardTypeUpToDate completionBlock:^(MECard *card, NSError *error) {
+                    NSLog(@"We got the card! %@", card.image);
+                }];
             }];
-        }];
+        }];;
 ```
