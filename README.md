@@ -8,7 +8,7 @@ My old school, Eyuboglu has an online students portal which you can go in and ch
 They also have an iPhone app, which I hated using. It's an user experience wreck. I couldn't do anything for it back then, I simply wasn't able to.
 
 
-**Now I present MEAPI, an Objective-C handler for the portal, using the reverse engineered API endpoints.**
+**Now I present MEAPI, an Objective-C wrapper for the portal, using the reverse engineered API endpoints.**
 
 I spent a lot of time figuring out how the API authenticated, but yeah here it is.
 
