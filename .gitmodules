@@ -1,0 +1,9 @@
+[submodule "OpenUDID"]
+	path = OpenUDID
+	url = https://github.com/ylechelle/OpenUDID.git
+[submodule "UICKeyChainStore"]
+	path = UICKeyChainStore
+	url = https://github.com/kishikawakatsumi/UICKeyChainStore.git
+[submodule "AFNetworking"]
+	path = AFNetworking
+	url = https://github.com/AFNetworking/AFNetworking.git
