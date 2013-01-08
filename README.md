@@ -16,7 +16,7 @@ It uses AFNetworking, OpenUDID and UICKeychainStore — added as submodules. (gi
 
 The code documents itself, the method names are straightforward.
 But here is an example anyway : 
-'''
+```objective-c
         [[MEAPI sharedInstance] getSessionTokenWithCompletionBlock:^(NSString *sessionToken) {
             NSLog(@"Got session token, this will be stored for this usage session, no need for calling it again and again for every API call.");
             
@@ -24,4 +24,4 @@ But here is an example anyway :
                 NSLog(@"We got the card! %@", card.image);
             }];
         }];
-'''
+```
